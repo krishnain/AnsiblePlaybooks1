@@ -1,0 +1,12 @@
+---
+- name: Create file
+  hosts: all
+  vars:
+    - a: 20
+  tasks:
+    - name: File creation
+      file:
+        name: /tmp/file1
+        state: touch
+      when: a == 10
+
