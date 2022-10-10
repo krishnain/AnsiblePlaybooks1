@@ -1,0 +1,6 @@
+---
+- name: Restart tomcat
+  service:
+    name: "{{a}}"
+    state: "{{k}}"
+...
